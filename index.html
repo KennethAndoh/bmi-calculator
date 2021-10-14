@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header text-center"><h2> BMI Calculator </h2></div>
+            <div class="card-body">
+                <form class="w-50 m-auto" onsubmit="return false">
+                    <div class="form-group">
+                        <label>Weight: </label>
+                        <input type="number" name="" placeholder="Weight in KG" required id="weight" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Height: </label>
+                        <input type="text" name="" placeholder="Height in Ft" required id="height" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>BMI Value: </label>
+                        <input type="number" name="" id="bmivalue" class="form-control">
+                    </div>
+                    <br />
+                    <div>
+                        <button type="submit" class="w-100 btn btn-success" onclick="getbmivalue()">Check BMI</button>
+                    </div>
+                    <div class="w-100 weight-guide text-center" id="weight-guide"></div>
+                </form>
+            </div>
+            <div class="c-footer text-center"> A healthy <strong>BMI</strong> ranges between 19 and 25.</div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>Copyright &copy <script>document.write(new Date().getFullYear());</script></p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="/bootstrap-5.1.1-dist/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
